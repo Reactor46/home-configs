@@ -325,15 +325,15 @@ function cd... { Set-Location ..\.. }
 function cd.... { Set-Location ..\..\.. }
 
 # Folder shortcuts
-function cdgit {Set-Location "G:\Informatik\Projekte"}
-function cdtbz {Set-Location "$env:OneDriveCommercial\Dokumente\Daten\TBZ"}
-function cdbmz {Set-Location "$env:OneDriveCommercial\Dokumente\Daten\BMZ"}
-function cdhalter {Set-Location "$env:OneDriveCommercial\Dokumente\Daten\Halter"}
+#function cdgit {Set-Location "G:\Informatik\Projekte"}
+#function cdtbz {Set-Location "$env:OneDriveCommercial\Dokumente\Daten\TBZ"}
+#function cdbmz {Set-Location "$env:OneDriveCommercial\Dokumente\Daten\BMZ"}
+#function cdhalter {Set-Location "$env:OneDriveCommercial\Dokumente\Daten\Halter"}
 
-function ssh-m122 {
-    param ([string]$ip)
-    ssh -i ~\.ssh\06-student.pem -o ServerAliveInterval=30 "ubuntu@$ip"
-}
+#function ssh-m122 {
+#    param ([string]$ip)
+#    ssh -i ~\.ssh\06-student.pem -o ServerAliveInterval=30 "ubuntu@$ip"
+#}
 
 # -------------
 # Run section
@@ -345,7 +345,7 @@ Import-Module -Name Microsoft.WinGet.CommandNotFound > $null 2>&1
 if (-not $?) { Write-Host "💭 Make sure to install WingetCommandNotFound by MS Powertoys" -ForegroundColor Yellow }
 if (-not (Test-Path -Path $PROFILE)) {
     New-Item -ItemType File -Path $PROFILE | Out-Null
-    Add-Content -Path $PROFILE -Value 'iex (iwr "https://raw.githubusercontent.com/CrazyWolf13/home-configs/main/Microsoft.PowerShell_profile.ps1").Content'
+    Add-Content -Path $PROFILE -Value 'iex (iwr "https://raw.githubusercontent.com/Reactor46/home-configs/main/Microsoft.PowerShell_profile.ps1").Content'
     Write-Host "PowerShell profile created at $PROFILE." -ForegroundColor Yellow
 }
-oh-my-posh init pwsh --config 'https://raw.githubusercontent.com/CrazyWolf13/home-configs/main/montys.omp.json' | Invoke-Expression
+oh-my-posh init pwsh --config 'https://raw.githubusercontent.com/Reactor46/home-configs/main/montys.omp.json' | Invoke-Expression
