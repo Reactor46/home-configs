@@ -35,9 +35,9 @@ function Initialize-DevEnv {
     Write-Host "✅ Successfully initialized Pwsh with all Modules and applications" -ForegroundColor Green
 }
 
-#function Invoke-Helper {
-#    Invoke-Expression (Invoke-WebRequest -Uri "https://raw.githubusercontent.com/username/repo/branch/path/to/script.ps1" -UseBasicParsing).Content
-#}
+function Invoke-Helper {
+    Invoke-Expression (Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Reactor46/home-configs/main/pwsh_helper.ps1" -UseBasicParsing).Content
+}
 
 
 # Function to create config file
