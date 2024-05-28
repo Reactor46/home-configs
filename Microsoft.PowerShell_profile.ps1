@@ -1,5 +1,5 @@
 Write-Host ""
-Write-Host "Welcome Tobias ⚡" -ForegroundColor DarkCyan
+Write-Host "Welcome John ⚡" -ForegroundColor DarkCyan
 Write-Host ""
 
 #All Colors: Black, Blue, Cyan, DarkBlue, DarkCyan, DarkGray, DarkGreen, DarkMagenta, DarkRed, DarkYellow, Gray, Green, Magenta, Red, White, Yellow.
