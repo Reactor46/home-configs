@@ -9,7 +9,7 @@
 
 # Command to inject Profile
 ```
-iex (iwr "https://raw.githubusercontent.com/CrazyWolf13/home-configs/main/Microsoft.PowerShell_profile.ps1").Content
+iex (iwr "https://raw.githubusercontent.com/Reactor46/home-configs/main/Microsoft.PowerShell_profile.ps1").Content
 
 ```
 Open the $PROFILE with `code $profile`.
